@@ -161,7 +161,7 @@ setup(
         # guaranteed to be installable by `pip install` on all platforms.
         # To tell if a package is pure-python, go to https://pypi.org/project/{name}/#files
         "Pillow>=7.1",  # or use pillow-simd for better performance
-        #"matplotlib",  # TODO move it to optional after we add opencv visualization
+        "matplotlib==3.10.3",  # TODO move it to optional after we add opencv visualization
         #"pycocotools>=2.0.2",  # corresponds to https://github.com/ppwwyyxx/cocoapi
         # Do not add opencv here. Just like pytorch, user should install
         # opencv themselves, preferrably by OS's package manager, or by
@@ -170,7 +170,7 @@ setup(
         #"termcolor>=1.1",
         #"yacs>=0.1.8",
         #"tabulate",
-        "cloudpickle",
+        "cloudpickle==3.1.1",
         #"tqdm>4.29.0",
         #"tensorboard",
         # Lock version of fvcore/iopath because they may have breaking changes
@@ -185,7 +185,7 @@ setup(
         #"hydra-core>=1.1",
         #"black==22.3.0",
         #"timm",
-        "fairscale",
+        "fairscale==0.4.13",
         #"packaging",
         # If a new dependency is required at import time (in addition to runtime), it
         # probably needs to exist in docs/requirements.txt, or as a mock in docs/conf.py
